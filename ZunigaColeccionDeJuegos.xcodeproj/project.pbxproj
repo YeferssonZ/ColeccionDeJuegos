@@ -14,6 +14,7 @@
 		619EC9FC2AE71FD70085FF2D /* ZunigaColeccionDeJuegos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 619EC9FA2AE71FD70085FF2D /* ZunigaColeccionDeJuegos.xcdatamodeld */; };
 		619EC9FE2AE71FDA0085FF2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619EC9FD2AE71FDA0085FF2D /* Assets.xcassets */; };
 		619ECA012AE71FDA0085FF2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619EC9FF2AE71FDA0085FF2D /* LaunchScreen.storyboard */; };
+		619ECA092AE731120085FF2D /* JuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619ECA082AE731120085FF2D /* JuegosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		619EC9FD2AE71FDA0085FF2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		619ECA002AE71FDA0085FF2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		619ECA022AE71FDA0085FF2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		619ECA082AE731120085FF2D /* JuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				619EC9FF2AE71FDA0085FF2D /* LaunchScreen.storyboard */,
 				619ECA022AE71FDA0085FF2D /* Info.plist */,
 				619EC9FA2AE71FD70085FF2D /* ZunigaColeccionDeJuegos.xcdatamodeld */,
+				619ECA082AE731120085FF2D /* JuegosViewController.swift */,
 			);
 			path = ZunigaColeccionDeJuegos;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				619ECA092AE731120085FF2D /* JuegosViewController.swift in Sources */,
 				619EC9F62AE71FD70085FF2D /* ViewController.swift in Sources */,
 				619EC9F22AE71FD70085FF2D /* AppDelegate.swift in Sources */,
 				619EC9F42AE71FD70085FF2D /* SceneDelegate.swift in Sources */,
