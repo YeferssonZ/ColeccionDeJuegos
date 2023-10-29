@@ -31,9 +31,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="V5Q-gs-ThJ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="X8a-hQ-gpq">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="X8a-hQ-gpq">
                             <connections>
-                                <segue destination="vEi-zh-2FO" kind="show" id="YTo-GU-sPe"/>
+                                <segue destination="vEi-zh-2FO" kind="show" identifier="juegoSegue" id="YTo-GU-sPe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -65,8 +65,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hs3-Gq-zVJ">
+                                <rect key="frame" x="169.5" y="631" width="75.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="vEi-zh-2FO" eventType="touchUpInside" id="DaM-lS-NH5"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eer-au-mwB">
+                                <rect key="frame" x="50" y="344" width="314" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nt6-Hm-YFq">
+                                <rect key="frame" x="50" y="682" width="314" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZ4-yL-5dk">
-                                <rect key="frame" x="150" y="344" width="114" height="31"/>
+                                <rect key="frame" x="169.5" y="580" width="75.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Agregar"/>
                                 <connections>
@@ -79,14 +96,22 @@
                         <constraints>
                             <constraint firstItem="gfZ-Zo-z4g" firstAttribute="width" secondItem="NeC-WM-tvz" secondAttribute="width" multiplier="2.8866" constant="-520" id="EaE-Hc-Gcm"/>
                             <constraint firstItem="gfZ-Zo-z4g" firstAttribute="centerX" secondItem="sd5-Xa-7eJ" secondAttribute="centerX" id="NQs-lf-p35"/>
+                            <constraint firstItem="Eer-au-mwB" firstAttribute="leading" secondItem="yly-XU-2Qz" secondAttribute="leading" constant="50" id="SwO-2A-faa"/>
+                            <constraint firstItem="NeC-WM-tvz" firstAttribute="centerX" secondItem="Eer-au-mwB" secondAttribute="centerX" id="UD7-mJ-sWU"/>
                             <constraint firstItem="gfZ-Zo-z4g" firstAttribute="centerX" secondItem="NeC-WM-tvz" secondAttribute="centerX" id="Ump-Y6-7sz"/>
                             <constraint firstItem="gfZ-Zo-z4g" firstAttribute="top" secondItem="yly-XU-2Qz" secondAttribute="top" constant="32" id="VqH-fe-eGS"/>
-                            <constraint firstItem="MZ4-yL-5dk" firstAttribute="top" secondItem="NeC-WM-tvz" secondAttribute="bottom" constant="20" id="ZUz-wX-ZKv"/>
+                            <constraint firstItem="yly-XU-2Qz" firstAttribute="trailing" secondItem="Eer-au-mwB" secondAttribute="trailing" constant="50" id="XHl-wp-T7E"/>
+                            <constraint firstItem="MZ4-yL-5dk" firstAttribute="centerX" secondItem="hs3-Gq-zVJ" secondAttribute="centerX" id="a0f-Ju-FSC"/>
+                            <constraint firstItem="yly-XU-2Qz" firstAttribute="trailing" secondItem="nt6-Hm-YFq" secondAttribute="trailing" constant="50" id="aLB-oP-pMS"/>
+                            <constraint firstItem="Eer-au-mwB" firstAttribute="top" secondItem="NeC-WM-tvz" secondAttribute="bottom" constant="20" id="b4p-sC-KvL"/>
                             <constraint firstItem="NeC-WM-tvz" firstAttribute="top" secondItem="gfZ-Zo-z4g" secondAttribute="bottom" constant="20" id="eb5-gY-V0V"/>
-                            <constraint firstItem="MZ4-yL-5dk" firstAttribute="leading" secondItem="yly-XU-2Qz" secondAttribute="leading" constant="150" id="iLa-pp-ESf"/>
+                            <constraint firstItem="Eer-au-mwB" firstAttribute="centerX" secondItem="MZ4-yL-5dk" secondAttribute="centerX" id="hbY-WO-WrK"/>
+                            <constraint firstItem="nt6-Hm-YFq" firstAttribute="leading" secondItem="yly-XU-2Qz" secondAttribute="leading" constant="50" id="klh-YY-rGE"/>
+                            <constraint firstItem="nt6-Hm-YFq" firstAttribute="top" secondItem="hs3-Gq-zVJ" secondAttribute="bottom" constant="20" id="oWx-bv-llS"/>
                             <constraint firstItem="NeC-WM-tvz" firstAttribute="centerX" secondItem="sd5-Xa-7eJ" secondAttribute="centerX" id="ok6-0f-5c1"/>
-                            <constraint firstItem="NeC-WM-tvz" firstAttribute="centerX" secondItem="MZ4-yL-5dk" secondAttribute="centerX" id="ovO-TY-xA9"/>
-                            <constraint firstItem="yly-XU-2Qz" firstAttribute="trailing" secondItem="MZ4-yL-5dk" secondAttribute="trailing" constant="150" id="xDe-4o-13m"/>
+                            <constraint firstItem="MZ4-yL-5dk" firstAttribute="top" secondItem="Eer-au-mwB" secondAttribute="bottom" constant="20" id="t0e-Mg-i7g"/>
+                            <constraint firstItem="hs3-Gq-zVJ" firstAttribute="top" secondItem="MZ4-yL-5dk" secondAttribute="bottom" constant="20" id="w7m-8p-h0A"/>
+                            <constraint firstItem="hs3-Gq-zVJ" firstAttribute="centerX" secondItem="nt6-Hm-YFq" secondAttribute="centerX" id="z4q-H4-0xu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Uxz-4I-UQf">
@@ -105,12 +130,16 @@
                     </navigationItem>
                     <connections>
                         <outlet property="JuegoImageView" destination="gfZ-Zo-z4g" id="sZE-6w-To1"/>
+                        <outlet property="agregarActualizarBoton" destination="MZ4-yL-5dk" id="geG-kY-tS9"/>
+                        <outlet property="categoriaLabel" destination="nt6-Hm-YFq" id="bTg-pm-6dZ"/>
+                        <outlet property="categoriaPicker" destination="Eer-au-mwB" id="yZO-Fn-dKL"/>
+                        <outlet property="eliminarBoton" destination="hs3-Gq-zVJ" id="Par-kC-khR"/>
                         <outlet property="tituloTextField" destination="NeC-WM-tvz" id="YZj-Vx-asV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SdB-C9-vhN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1651" y="50"/>
+            <point key="canvasLocation" x="1650.7246376811595" y="49.553571428571423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ouY-pE-wbb">
